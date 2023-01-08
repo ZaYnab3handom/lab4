@@ -1,0 +1,37 @@
+Day 7 Lab Assignments
+Please do these assignments:
+1-	Create a new page that has a textbox, and alert the code of key pressed on a textbox, and which mouse button clicked on it.
+2-	On the same page, Make a button (Start clock), that displays clock with current time in local format (time only without date) in a textbox updated every second.
+a.	Handle the onclick event of the (start clock) button using JavaScript (Not in the input tag).
+b.	Use addEventListner method to add another handler to the button on click event, to show alert saying: “Clock started!”.
+    ●	What’s the difference between handling the event using addEventListner() and other methods?
+    ●	Will addEventListner() will overwrite the other handler function attached to that button before?
+c.	 Stop the clock when user clicks (alt + w) letter.
+
+3-	Make a registration form (you can re-use the registration form you did before) as the following (Use HTML 5 new input types and validation attributes): 
+  a.	Form fields: 
+    ●	Full Name (Required)
+    ●	Email (Required, input type: email)
+    ●	City (Drop-down list filled with some cities)
+    ●	Password
+    ●	Repeat password.
+    ●	“I accept the terms and conditions” checkbox.
+    ●	Register button, which redirects to another page saying: “Thank you, Full Name for registering in our website”.
+  b.	Make full name text has default text “Enter your Name:” [use placeholder attribute].
+  c.	When the user focus in full name text, show blue border for the input (use element.style.border=”solid 1px blue”), and remove the border when the input loses the focus.
+  d.	After user finish writing his full name and leaves the text box (lost focus), if the full name wasn't in correct format (not empty string and more than 3 letters), show text next to textbox saying “invalid name”, and focus the full name textbox, and select all text on it, else if full name was in correct format hide the text next to textbox.
+  e.	For Password and repeat password fields, when the user leaves the repeat password field, we need to validate that they’re required, and they’re identical (The same), and if they’re not the same show text besides it saying “password and repeat password should be the same”.
+  f.	Change the background color of the text input when it’s not valid to: gray, and to white when it’s valid (use element.style.backgroundColor).
+  g.	For the Email, use HTML5 “Required” attribute, and input type email.
+    ●	You’ll remark that HTML5 validation will prevent you from submitting the form unless it’s valid, right?
+    ●	But for the other custom validation of the name and password & repeat password, will not prevent the form for submitting and you can submit the form even if they’re not valid, why?
+.
+4-	Make a page that contains an empty star image (provided in the lab files), and changes as following (like star rating control):
+    a.	When mouse over it, it converts to filled star (like rating stars control, but you can try it on one star only in the beginning, then change it to 5 stars).
+    b.	When mouse move away from it, it changes back to empty star.
+    c.	When mouse over it, and it clicked, make it fixed on the filled star (don’t changes again when mouse move away from it).
+    d.	When re-clicked again (after it was fixed from first click), it backs to empty star when mouse is out.
+    
+5-	Make a search textbox, that when mouse is on it (on focus), it’s width increases gradually, and when mouse is out (on blur), it backs gradually to its original width (like this one here: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_anim_search , and note that the given demo is done using CSS3 transition, but you need to make it using JavaScript only without using CSS 3 transition or animation).
+
+6-	Create a simple photo gallery like the following, and use opacity property to make each image fades out gradually (its opacity decreases to 0.3 gradually) when mouse is over it, and fades in gradually (its opacity increases to 1 gradually) when mouse is a way.

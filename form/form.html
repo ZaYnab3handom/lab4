@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form Page</title>
+</head>
+
+<body>
+    <form action="Thankyou.html" method="get" >
+        <label for="usrName">Name: </label> <br>
+        <input type="text" id="usrName" placeholder="Enter Your Name" size="20" maxlength="10" name="usrName" onfocus="chnageColorOnFocus()" 
+        onblur="inputOnBlur()" required>
+        <span id="error"></span>
+        <br><br>
+        <label for="email">Email: </label><br>
+        <input type="email" id="email" required > 
+        <br><br>
+        <label for="Pass">Password: </label><br>
+        <input type="password" id="Pass" size="20" >
+        <br><br>
+        <label for="RePass">Repeat Password: </label><br>
+        <input type="password" id="RePass" size="20" onblur="checkRepeatedpass()">
+        <span id="passError"></span>
+        <br><br>
+        
+        <label for="city">Choose a City:</label>
+        <select name="city" id="city">
+            <option value="Cairo">Cairo</option>
+            <option value="Minya">Minya</option>
+            <option value="Suez">Suez</option>
+        </select> <br><br>
+        
+
+        <input type="checkbox" id="terms" name="terms" value="terms" >
+        <label for="terms"> I agreed to terms and condition </label>
+
+        <br><br>
+        <input type="submit" value="Submit">
+        </form>
+        <script src="form.js"></script> 
+
+</body>
+
+
+
+</html>
